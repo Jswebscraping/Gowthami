@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        Generate the  result of the student whether PASS or Fail
+    </title>
+      
+    <style>
+        body {
+            border:2px solid black;
+            width:400px;
+            height:150px;
+            text-align:center;
+        }
+        h1 {
+            color:green
+        }
+    </style>
+      
+      <script type="text/javascript">
+        
+          // Function to Generate the  result of the student whether PASS or Fail() 
+              {
+                
+              var n, i, flag = true;
+                
+              // Getting the value form the
+              // text field using DOM
+              n = document.myform.n.value;
+              n = parseInt(n)
+              for (i = 2; i <= n - 1; i++)
+                  if (n % i == 0) {
+                      flag = false;
+                      break;
+                  }
+                    
+              // Check and display output
+              if (flag == true)
+                  console.log(n + " is pass");
+              else
+                  console.log(n + " is not fail");
+          }
+        </script>
+</head>
+  
+<body>
+        <h1>Result</h1>
+        <h4>Click  the  result of the student whether PASS or Fail</h4>
+      
+        <form name="myform">
+            Student Name Geetha: 
+            <input type="text" name=n value=" pass ">
+            <input type="button" value="Click" onClick="Click()">
+            <br>
+        </form>
+    </center>
+</body>
+  
+</html>       
